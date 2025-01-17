@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen Alpha Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gen Alpha Translator</h1>
+        <p>Select a translation option below:</p>
+    </header>
+    <main>
+        <div class="button-container">
+            <button class="huge-button" id="genAlphaToEnglishButton"><span>Gen Alpha to English</span></button>
+            <button class="huge-button" id="englishToGenAlphaButton"><span>English to Gen Alpha</span></button>
+        </div>
+        <div id="genAlphaToEnglishArea" class="translation-area" style="display: none;">
+            <label for="genAlphaInput">Write the Gen Alpha here:</label>
+            <input type="text" id="genAlphaInput" placeholder="Enter Gen Alpha word or phrase">
+            <label for="standardEnglishOutput">Standard English:</label>
+            <textarea id="standardEnglishOutput" placeholder="Translation will appear here" readonly></textarea> 
+            <button id="translateButton"><span>Translate</span></button>
+        </div>
+        <div id="englishToGenAlphaArea" class="translation-area" style="display: none;">
+            <label for="englishInput">Write the English here:</label>
+            <input type="text" id="englishInput" placeholder="Enter Standard English word or phrase">
+            <label for="genAlphaOutput">Gen Alpha:</label>
+            <textarea id="genAlphaOutput" placeholder="Translation will appear here" readonly></textarea>
+            <button id="translateButtonEnglish"><span>Translate</span></button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gen Alpha Translator</p>
+        <div class="discord-container">
+            <a id="discordLink" href="https://discord.com" target="_blank"><span>Join us on Discord</span></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
